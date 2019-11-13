@@ -31,3 +31,22 @@
     border: 2px solid $white;
     border-radius: 10px;
 }
+
+.post {
+    ul {
+        li {
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        ul {
+            margin-top: 10px;
+            display: none;
+
+            &.is-visible {
+                display: block!important;
+            }
+        }
+    }
+}
+
