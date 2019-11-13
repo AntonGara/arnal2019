@@ -59,11 +59,6 @@ markdown: kramdown
 kramdown:
   # Prevent IDs from being added to h1-h6 tags
   auto_ids: false
-
-media_library:
-  name: uploadcare
-  config:
-    publicKey: 6a70b8d6a849b3650225
   
 # Include in processing (e.g. Netlify directives)
 # Uncomment before use
