@@ -40,6 +40,11 @@ main {
   flex: 1 0 auto;
 }
 
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
 h2 {
   @include text(38px, 1.25);
   font-family: $mont-alt;
