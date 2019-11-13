@@ -27,41 +27,39 @@ body {
 	min-height: 100vh;
 	display: flex;
   flex-direction: column;
-  background-image: url(/assets/img/uploads/main1.jpg);
+  background-image: url(/assets/img/uploads/main.jpg);
   background-size: cover;
 }
 
 header,
 footer {
   flex-shrink: 0;
-  z-index: 1;
 }
 
 main {
   flex: 1 0 auto;
-  z-index: 1;
 }
 
 h2 {
-  @include text(43px, 53px, 0);
+  @include text(38px, 1.25);
   font-family: $mont-alt;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 h3 {
-  @include text(35px, 1.25, 0);
+  @include text(30px, 1.25);
   font-family: $mont-alt;
   margin-bottom: 15px;
 }
 
 h4 {
-  @include text(30px, 1.25, 0);
+  @include text(24px, 1.25);
   font-family: $mont-alt;
   margin-bottom: 15px;
 }
 
 p {
-  @include text(17px, 27px, 0);
+  @include text(17px, 1.5);
   margin-bottom: 15px;
 }
 
@@ -77,7 +75,11 @@ ol {
   margin-bottom: 20px;
 
   li {
-    @include text(17px, 27px, 0);
+    @include text(17px, 1.5);
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
   }
 }
 

@@ -11,13 +11,23 @@
 }
 
 .home {
-    padding: 15px;
+    padding: 25px;
     background-color: $white;
     border-radius: 10px;
 
     &__menu {
         a {
-            @include text(24px, 1.25, 0);
+            @include text(18px, 1.5);
         }
     }
+}
+
+.logo {
+    @include text(24px, 24px);
+    font-family: $mont-alt;
+    text-decoration: none;
+    color: $white;
+    padding: 3px;
+    border: 2px solid $white;
+    border-radius: 10px;
 }

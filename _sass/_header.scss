@@ -1,22 +1,11 @@
 header {
-    padding: 20px 0;
+    padding: 25px 0;
     
     nav {
         @include wrap;
 
         display: flex;
         justify-content: space-between;
-
-        a {
-            @include text(24px, 24px);
-            font-family: $mont-alt;
-            text-decoration: none;
-            color: $white;
-
-            span {
-                color: $accent;
-            }
-        }
 
         ul {
             margin: 0;
@@ -25,16 +14,16 @@ header {
 
             li {
                 &:not(:last-child) {
-                    margin-right: 25px;
+                    margin: 0 25px 0 0;
                 }
             }
 
             a {
-                @include text(17px, 17px);
+                @include text(18px, 18px);
                 font-weight: bold;
                 text-decoration: none;
                 color: $text;
-                transition: .3s;
+                vertical-align: center;
 
                 &:hover {
                     color: $accent;
