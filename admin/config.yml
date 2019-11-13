@@ -22,12 +22,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - label: "docs"
-        name: "docs"
-        widget: "file"
-        media_library:
-          config:
-            multiple: true
     # PAGES
   - name: "page"
     label: "Page"
