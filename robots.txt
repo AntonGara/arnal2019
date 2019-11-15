@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /index.html
+Host: arnal2020.ru
+Sitemap: http://arnal2020.ru/sitemap.xml

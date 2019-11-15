@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ООО "Арнал"
-email: your-email@example.com
+email: anton.gara89@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Cпециализированная (поверенная) организация Территориального управления Росимущества по продаже арестованного имущества
 baseurl: "/" # the subpath of your site if applicable, e.g. /blog
-url: "https://jekyll-netlify-boilerplate.netlify.com" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://arnal2020.ru" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title
