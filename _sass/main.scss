@@ -18,7 +18,7 @@
 
 body {
 	font-size: 16px;
-	min-width: 320px;
+	min-width: 360px;
 	position: relative;
 	line-height: 1.25;
 	font-family: $mont;
@@ -49,18 +49,30 @@ h2 {
   @include text(38px, 1.25);
   font-family: $mont-alt;
   margin-bottom: 30px;
+
+  @include media('<tablet') {
+    @include text(33px, 1.25);
+  }
 }
 
 h3 {
   @include text(30px, 1.25);
   font-family: $mont-alt;
   margin-bottom: 15px;
+
+  @include media('<tablet') {
+    @include text(25px, 1.25);
+  }
 }
 
 h4 {
   @include text(24px, 1.25);
   font-family: $mont-alt;
   margin-bottom: 15px;
+
+  @include media('<tablet') {
+    @include text(21px, 1.25);
+  }
 }
 
 p {
@@ -71,6 +83,11 @@ p {
 table {
   td {
     padding: 5px;
+
+    @include media('<tablet') {
+      @include text(14px, 1.25);
+      padding: 2px;
+    }
   }
 }
 

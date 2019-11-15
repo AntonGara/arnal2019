@@ -15,8 +15,8 @@ window.onload = function() {
         })
     }
 
-    document.addEventListener('click', event => {
-        let target = event.path ? event.path[0] : event.target;
+    document.addEventListener('click', function(event) {
+        var target = event.path ? event.path[0] : event.target;
 
         if(target.origin && target.origin !== window.location.origin) {
             target.setAttribute('target', '_blank');
