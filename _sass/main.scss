@@ -42,7 +42,11 @@ main {
 
 img {
   object-fit: cover;
-  max-width: 100%;
+  max-width: 400px;
+
+  @include media('<tablet') {
+    max-width: 100%;
+  }
 }
 
 h2 {

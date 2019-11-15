@@ -24,4 +24,23 @@ window.onload = function() {
         }
     })
     
+    // modal
+    var modal = document.getElementById("myModal"),
+        imgs = document.querySelectorAll('img'),
+        modalImg = document.querySelector('#modalImg'),
+        closeBtn = document.querySelector('.close');
+
+    for (var index = 0; index < imgs.length; index++) {
+        var img = imgs[index];
+
+        img.addEventListener('click', function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        })
+    }  
+
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = "none";
+    })
 }
