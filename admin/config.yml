@@ -30,6 +30,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Документы
             name: files
             widget: list
+            required: false
             fields: 
               - {label: "File name", name: "title", widget: "string"}
               - {label: "File", name: "file", widget: "file"} 
