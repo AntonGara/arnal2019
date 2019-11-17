@@ -21,8 +21,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - label: "Документы"
-        name: "Список документов"
+      - label: "Список документов"
+        name: "docs"
         widget: "list"
         fields:
           - {label: "Title", name: "title", widget: "string"}
