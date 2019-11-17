@@ -26,11 +26,10 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Текст", name: "text", widget: "markdown"}
+          - {label: "Текст", name: "text", widget: "markdown", required: false}
           - label: Документы
             name: files
             widget: list
-            required: false
             fields: 
               - {label: "File name", name: "title", widget: "string"}
               - {label: "File", name: "file", widget: "file"} 
