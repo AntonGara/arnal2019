@@ -31,7 +31,7 @@ collections: # A list of collections the CMS should be able to edit
             fields: 
               - {label: "File name", name: "title", widget: "string"}
               - {label: "File", name: "file", widget: "file"}
-        - {label: "Текст", name: "text", widget: "markdown", required: false}
+      - {label: "Текст", name: "text", widget: "markdown", required: false}
     # PAGES
   - name: "page"
     label: "Page"
