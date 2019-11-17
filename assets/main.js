@@ -6,7 +6,7 @@ window.onload = function() {
         
         item.addEventListener('click', function(e) {
             if (e.target === this) {
-                var list = this.querySelector('ul')
+                var list = this.querySelector('.info')
 
                 if(list) {
                     list.classList.toggle('is-visible')

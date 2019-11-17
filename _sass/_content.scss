@@ -50,12 +50,16 @@
 
         ul {
             list-style: none;
-            margin-top: 10px;
-            display: none;
+        }
+    }
 
-            &.is-visible {
-                display: block!important;
-            }
+    .info {
+        display: none;
+        margin-top: 10px;
+        font-weight: 400;
+    
+        &.is-visible {
+            display: block;
         }
     }
 }
