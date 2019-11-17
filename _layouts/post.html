@@ -16,13 +16,7 @@ layout: default
 
                 <ul>
                     {% for file in item.files %}
-                    <li><a href="{{ file.file }}">{{ file.title }}</a></li>
-                    {% endfor %}
-                </ul>
-
-                <ul>
-                    {% for foto in item.fotos %}
-                    <li><img src="{{ fotos.image }}" alt="{{ fotos.alt }"></li>
+                    <li><a href="{{ file.file }}" download="file">{{ file.title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

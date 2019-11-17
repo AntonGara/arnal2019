@@ -32,13 +32,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             fields: 
               - {label: "File name", name: "title", widget: "string"}
-              - {label: "File", name: "file", widget: "file"}
-          - label: Фото
-            name: fotos
-            widget: list
-            fields: 
-              - {label: "Описание", name: "alt", widget: "string"}  
-              - {label: "Фото", name: "image", widget: "image"}  
+              - {label: "File", name: "file", widget: "file"} 
     # PAGES
   - name: "page"
     label: "Page"
