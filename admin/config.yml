@@ -20,12 +20,8 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - label: "Docs"
-          name: "docs"
-          widget: "list"
-          field: {label: doc, name: doc, widget: file}
+      - {label: "Docs", name: "docs", widget: "list", field: {label: doc, name: doc, widget: file}}
     # PAGES
   - name: "page"
     label: "Page"
