@@ -3,8 +3,17 @@ layout: default
 ---
 <div class="home post">
     <h2>{{ page.title }}</h2>
-
-    {% include page-intro.html %}
     
-    {{ content }}
+    <ul>
+        {% for item in page.docs %}      
+        <li>
+            {{ item.title }}
+            <ul>
+                {% for file in item %}
+                <li><a href="{{ file.file }}">{{ file.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
 </div>

@@ -21,8 +21,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - label: "Docs"
-        name: "docs"
+      - label: "Документы"
+        name: "Список документов"
         widget: "list"
         fields:
           - {label: "Title", name: "title", widget: "string"}
@@ -30,7 +30,7 @@ collections: # A list of collections the CMS should be able to edit
             name: files
             widget: list
             fields: 
-              - {label: "File name", name: "file name", widget: "string"}
+              - {label: "File name", name: "title", widget: "string"}
               - {label: "File", name: "file", widget: "file"}
     # PAGES
   - name: "page"
