@@ -10,11 +10,23 @@ layout: default
         {% for item in page.docs %}      
         <li>
             {{ item.title }}
-            <ul>
-                {% for file in item.files %}
-                <li><a href="{{ file.file }}">{{ file.title }}</a></li>
-                {% endfor %}
-            </ul>
+
+            <div class="info">
+                {{ item.text }}
+
+                <ul>
+                    {% for file in item.files %}
+                    <li><a href="{{ file.file }}">{{ file.title }}</a></li>
+                    {% endfor %}
+                </ul>
+
+                <ul>
+                    {% for foto in item.foto %}
+                    <li><img src="{{ foto.image }}" alt="{{ foto.alt }"></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
         </li>
         {% endfor %}
     </ul>
