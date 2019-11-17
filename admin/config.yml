@@ -34,7 +34,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "File name", name: "title", widget: "string"}
               - {label: "File", name: "file", widget: "file"}
           - label: Фото
-            name: foto
+            name: fotos
             widget: list
             fields: 
               - {label: "Описание", name: "alt", widget: "string"}  
