@@ -10,7 +10,7 @@ layout: default
             {{ item.title }}
 
             <div class="info">
-                {{ item.text }}
+                {{ item.text | markdownify }}
 
                 <ul>
                     {% for file in item.files %}
