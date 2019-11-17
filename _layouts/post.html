@@ -11,7 +11,7 @@ layout: default
         <li>
             {{ item.title }}
             <ul>
-                {% for file in item %}
+                {% for file in item.files %}
                 <li><a href="{{ file.file }}">{{ file.title }}</a></li>
                 {% endfor %}
             </ul>
