@@ -4,15 +4,13 @@ layout: default
 <div class="home post">
     <h2>{{ page.title }}</h2>
 
-    {{ content }}
-
     <ul>
         {% for item in page.docs %}      
         <li>
             {{ item.title }}
 
             <div class="info">
-                {{ item.text }}
+                {{ content }}
 
                 <ul>
                     {% for file in item.files %}
